@@ -298,36 +298,27 @@ $('.navigation_item').click(function (e) {
 //при клике на элемнт с id #navigation_item_1
 $('#navigation_item_1').click(function () {
     //скрываем ненужные таблицы показываем нужную
-    $('#table_2').fadeOut("fast", function () {
-    });
-    $('#table_3').fadeOut("fast", function () {
-    });
-    $('#table_1').fadeIn("fast", function () {
-    });
+    $('#table_2')[0].style.display = 'none';
+    $('#table_3')[0].style.display = 'none';
+    $('#table_1')[0].style.display = '';
     sortalltable();
 });
 
 //при клике на элемнт с id #navigation_item_2
 $('#navigation_item_2').click(function () {
     //скрываем ненужные таблицы показываем нужную
-    $('#table_1').fadeOut("fast", function () {
-    });
-    $('#table_3').fadeOut("fast", function () {
-    });
-    $('#table_2').fadeIn("fast", function () {
-    });
+    $('#table_1')[0].style.display = 'none';
+    $('#table_3')[0].style.display = 'none';
+    $('#table_2')[0].style.display = '';
     sortalltable();
 });
 
 //при клике на элемнт с id #navigation_item_3
 $('#navigation_item_3').click(function () {
     //скрываем ненужные таблицы показываем нужную
-    $('#table_1').fadeOut("fast", function () {
-    });
-    $('#table_2').fadeOut("fast", function () {
-    });
-    $('#table_3').fadeIn("fast", function () {
-    });
+    $('#table_1')[0].style.display = 'none';
+    $('#table_2')[0].style.display = 'none';
+    $('#table_3')[0].style.display = '';
     sortalltable();
 });
 
