@@ -17,6 +17,7 @@
             <font color="#bbb">blocks </font>
             <font color="#dff3ff">mouse</font>
         </p>
+        <input type="number" id="fill" name="fill" min="1" max="5" value="3">
         <p class="score">0</p>
         <div class="content">
             <canvas id="cv" width="600" height="600"></canvas>
