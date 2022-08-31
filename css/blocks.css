@@ -30,3 +30,12 @@
     color: #addfad;
 }
 
+input {
+    padding-left: 30px;
+    border: 0;
+    outline: none;
+    font-size: 30px;
+    width: 35px;
+    margin-top: 10px;
+    color: #dff3ff;
+}
