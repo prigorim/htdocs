@@ -1,0 +1,41 @@
+﻿.content {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: calc(5% + 50px);
+    left: 0;
+}
+
+.anttable {
+    border-spacing: 0;
+    border-collapse: collapse;
+    position: absolute;
+    margin: auto;
+}
+
+.anttable td {
+    width: 20px;
+    height: 20px;
+    transition-duration: .2s;
+    border: 1px solid #bbb;
+    text-align: center;
+}
+
+.anthead {
+    position: absolute;
+    top: 5%;
+    height: 50px;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+input {
+    width: 70px;
+    cursor: pointer;
+    border: 0;
+    font-size: 20px;
+    outline: none;
+    padding: 20px;
+}

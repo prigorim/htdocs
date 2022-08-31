@@ -1,0 +1,27 @@
+﻿.head {
+    position: absolute;
+    top: 5%;
+    height: 50px;
+    left: calc(50% - 160px);
+    display: inline-flex;
+    width: 320px;
+}
+
+.head p {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.score {
+    position: absolute;
+    top: 5%;
+    right: 0;
+    height: 50px;
+    color: #addfad;
+}
+
+#canvas {
+    position: absolute;
+    top: calc(5% + 50px);
+    left: calc(50% - 400px);
+}

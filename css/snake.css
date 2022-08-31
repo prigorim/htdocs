@@ -1,0 +1,33 @@
+﻿.snake_head {
+    position: absolute;
+    top: 5%;
+    height: 50px;
+    width: 100%px;
+    left: calc(50% - 300px);
+    display: inline-flex;
+}
+
+.snake_head p {
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 30px;
+    margin-right: 30px;
+    color: #dff3ff;
+}
+
+#score {
+    color: #addfad;
+}
+
+.canvas {
+    position: absolute;
+    top: calc(5% + 50px);
+    left: calc(50% - 300px);
+    width: 601px;
+    height: 601px;
+    background: linear-gradient(#bbb, transparent 1px), linear-gradient(90deg, #bbb, transparent 1px);
+    background-size: 20px 20px;
+    background-color: white;
+    transition-duration: .2s;
+}

@@ -1,0 +1,263 @@
+﻿.canvas {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    background: linear-gradient(#bbb, transparent 1px), linear-gradient(90deg, #bbb, transparent 1px);
+    background-size: 10px 10px;
+    background-color: white;
+}
+
+.sendsuccessnotes {
+    position: fixed;
+    width: 20%;
+    height: 20px;
+    z-index: 100;
+    left: 40%;
+    background-color: #333333;
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.sendsuccessnotes p {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.task {
+    position: absolute;
+    min-width: 200px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.task_header {
+    display: flex;
+    height: 20px;
+    border-radius: 5px 5px 0 0;
+}
+
+.task_header input {
+    width: 160px;
+    margin: 0;
+    padding: 0;
+    Border: none;
+    outline: none;
+}
+
+.save_changes,
+.delete_changes {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.save_changes p,
+.delete_changes p {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.save_changes {
+    border-radius: 5px 0 0 0;
+}
+
+.delete_changes {
+    border-radius: 0 5px 0 0;
+}
+
+.save_changes:hover,
+.delete_changes:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #333333;
+    color: white;
+}
+
+.task_body {
+    border-radius: 0 0 5px 5px;
+}
+
+.task_item {
+    display: flex;
+}
+
+.task_item p {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    max-width: 160px;
+    width: 160px;
+    word-break: break-word;
+}
+
+.task_item_dot {
+    min-width: 20px;
+    height: 20px;
+}
+
+.task_item_dot p {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.task_item_remove {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition-duration: .5s;
+}
+
+.task_item_remove p {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.task_item_remove:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #333333;
+    color: white;
+}
+
+.task_input {
+    display: flex;
+}
+
+.task_input input {
+    width: 160px;
+    margin: 0;
+    margin-left: 20px;
+    padding: 0;
+    Border: none;
+    outline: none;
+}
+
+.task_input_add {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    transition-duration: .5s;
+    border-radius: 0 0 5px 0;
+}
+
+.task_input_add:hover {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background-color: #333333;
+    color: white;
+}
+
+.task_input_add p {
+    margin: 0;
+    margin-top: 3px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.menu {
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: calc(5% + 10px);
+    left: calc(5% + 10px);
+    z-index: 100;
+    cursor: pointer;
+}
+
+.menu:hover .menu_element {
+    background-color: #333333;
+}
+
+.menu_element {
+    position: absolute;
+    transition-duration: .5s;
+    border-radius: 5px;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    height: 10px;
+    width: 30px;
+    top: 10px;
+}
+
+.menu_element_toggle {
+    top: 0px;
+    height: 30px;
+    width: 10px;
+    left: 10px;
+}
+
+.menu_body {
+    position: fixed;
+    height: 130px;
+    width: 50px;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    bottom: calc(5%);
+    left: calc(5%);
+    z-index: 99;
+    padding: 0;
+    border-radius: 20px;
+}
+
+.navigation_menu {
+    height: 50px;
+    width: 50px;
+    z-index: 100;
+    top: 10px;
+    left: 0px;
+    position: absolute;
+    display: block;
+}
+
+.navigation_item {
+    transition-duration: .5s;
+    display: inline-block;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    margin-bottom: 10px;
+}
+
+.navigation_item p {
+    width: 100%;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 16.5px;
+}
+
+.navigation_item:hover {
+    background-color: #333333;
+    color: white;
+}
+
+.menu_header {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    top: 50px;
+}
