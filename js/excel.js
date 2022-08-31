@@ -1,4 +1,4 @@
-﻿//функция вывода на экран печатного образца
+//функция вывода на экран печатного образца
 $('.print').click(function () {
     //формируем html документ с таблицей
     $htmlcode = '<html>'
@@ -322,26 +322,6 @@ $('#navigation_item_3').click(function () {
     sortalltable();
 });
 
-//функция сортировки таблиц 
-function sorttable(tableid) {
-    //получаем дату из элемента с id #date
-    inputDate = document.getElementById("date");
-    //получаем нужную таблицу из id таблицы
-    table = document.getElementById(tableid);
-    //получаем массив строк таблицы
-    tr = table.getElementsByTagName("tr");
-    for (i = 2; i < tr.length - 1; i++) {
-        //скрываем строки у которых не совпадает значение в дате с датой из элемента
-        tddate = tr[i].getElementsByTagName("td")[0];
-        if (tddate.innerHTML == inputDate.value) {
-            tr[i].style.display = "";
-        }
-        else {
-            tr[i].style.display = "none";
-        }
-    }
-}
-
 //функция сортировки всех таблиц
 function sortalltable() {
     //получаем дату из input
@@ -362,8 +342,7 @@ function sortalltable() {
             success: function (data) {
                 $("#table_1")[0].innerHTML = data;
                 grouptable('table_1', 6, 2);
-                sorttable('table_1');
-                findsum('table_1', 5, 2);
+                findsum('table_1', 6, 2);
                 hoverTD('table_1');
             }
         });
@@ -378,8 +357,7 @@ function sortalltable() {
             success: function (data) {
                 $("#table_2")[0].innerHTML = data;
                 grouptable('table_2', 9, 2);
-                sorttable('table_2');
-                findsum('table_2', 8, 2);
+                findsum('table_2', 9, 2);
                 hoverTD('table_2');
             }
         });
@@ -394,7 +372,6 @@ function sortalltable() {
             success: function (data) {
                 $("#table_3")[0].innerHTML = data;
                 grouptable('table_3', 33, 3);
-                sorttable('table_3');
                 findsum('table_3', 33, 3);
                 hoverTD('table_3');
             }
